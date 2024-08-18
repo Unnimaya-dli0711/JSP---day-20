@@ -3,16 +3,10 @@
 <html>
 <body>
 <%
-    Boolean isLoggedIn=false;
+    Boolean isLoggedIn=true;
     String userName="Unnimaya";
-    if(isLoggedIn)
-    {
-    out.println("<h2>Welcome , "+userName+"</h2>");
-    }else
-    {
-       out.println("<h2>Login failed , "+userName+"</h2>");
-
-    }
+    request.setAttribute("isLoggedIn", isLoggedIn);
+    request.setAttribute("userName", userName);
 %>
 <c:if test="${isLoggedIn}">
 <h2>welcome ,<%=userName%></h2>

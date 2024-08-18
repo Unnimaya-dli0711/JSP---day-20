@@ -12,7 +12,7 @@
         List<Employee> employees = new ArrayList<>();
         employees.add(new Employee("John Doe", "HR"));
         employees.add(new Employee("Jane Smith", "IT"));
-        employees.add(new Employee("Mike Johnson", "Finance")); 
+        employees.add(new Employee("Mike Johnson", "Finance"));
         request.setAttribute("employeeList", employees);
 %>
     <h2>Employee List</h2>
